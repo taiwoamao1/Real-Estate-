@@ -1,18 +1,17 @@
-# Real-Estate-
-### Statistical Methods
+## Real-Estate-
+#### Statistical Methods
 
-Application of Business Analytics in HR in the Automotive Industry.
----
+
 ## Table of contents
 ---
 - [Project overview](#project-overview)
-- [Data sources](#data-sources)
-- [Tools](#tools)
+- [Data source](#data-source)
+- [Tool](#tool)
 - [Data preparation](#data-preparation)
 - [Data Analysis](#data-analysis)
 - [Results](#results)
 - [Insights](#insights)
-- [Limitations](#limitations) 
+ 
 
 
 ### Project Overview
@@ -21,10 +20,9 @@ This project aims to check if there is a  correlation between the  size of a hou
 
 
 
-### Data sources
-Data was generated from a business simulation game, carried out for 6 years. 
-
-### Tools
+### Data source
+A fictitious data. 
+### Tool
 - Excel - analyse and report.
 
 
@@ -65,7 +63,5 @@ The above results show there is a positive relation between the size of the hous
 for every increase in the size of the house, the market value will
 The intercept says if the size of the house is below 1700 the market value is going to be £-47, 159.99. 
 The slope says for every increase in the size of a house, the market value will be up by £77.59.
-R2
+To get a good market value for a house, the size of the house will have to be increased.
 
-### Limitations 
-- Fictional data was used, not actual data. 
