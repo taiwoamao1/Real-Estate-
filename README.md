@@ -60,8 +60,8 @@ The correlation shows a positive relationship between  the two variables. The in
 
 ### Insights
 The above results show there is a positive relation between the size of the house and market value. An increase in the size of the house will lead to an increase in the market value.
-for every increase in the size of the house, the market value will
-The intercept says if the size of the house is below 1700 the market value is going to be £-47, 159.99. 
-The slope says for every increase in the size of a house, the market value will be up by £77.59.
-To get a good market value for a house, the size of the house will have to be increased.
+For every increase in the size of the house, the market value will increase.
+The intercept shows if the size of the house is below 1700 the market value is going to be £-47, 159.99. 
+The slope shows for every increase in the size of a house, the market value will be up by £77.59.
+To get a good market value for a house, the size of the house will have to  increase.
 
