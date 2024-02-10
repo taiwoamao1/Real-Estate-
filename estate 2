@@ -1,0 +1,61 @@
+
+R version 4.2.2 (2022-10-31 ucrt) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> # Create a data frame
+> Data_Frame <- data.frame (
++   Square_feet = c(1812, 1914, 1842, 1812, 1836, 2028, 1732),
++   Market_Value = c(90000, 104400, 93300, 91000, 101900, 108500, 87600)
++  )
+>  sd (Data_Frame$Square_feet)
+[1] 93.76871
+>  sd (Data_Frame$Market_Value)
+[1] 8137.509
+> # Create a scatter plot
+> plot (Data_Frame$Square_feet, Data_Frame$Market_Value, xlab = " Sq. Ft.", ylab = " Market Value", main = " Sq. Ft. vs. Market Value")
+> 
+> # Create a linear regression model
+> lm_model <- lm (Market_Value ~ Square_feet, Data_Frame)
+> summary (lm_model)
+
+Call:
+lm(formula = Market_Value ~ Square_feet, data = Data_Frame)
+
+Residuals:
+      1       2       3       4       5       6       7 
+-3434.8  3050.9 -2462.5 -2434.8  6603.0 -1694.4   372.5 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)   
+(Intercept) -47159.99   32259.00  -1.462  0.20361   
+Square_feet     77.59      17.38   4.464  0.00662 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3993 on 5 degrees of freedom
+Multiple R-squared:  0.7994,    Adjusted R-squared:  0.7593 
+F-statistic: 19.92 on 1 and 5 DF,  p-value: 0.006619
+
+> # Create a scatter plot with regression line
+> plot (Data_Frame$Square_feet, Data_Frame$Market_Value, xlab = " Sq. Ft.", ylab = " Market Value", main = " Sq. Ft. vs. Market Value")
+> abline (lm_model, col = "red")
+> # Create a scatter plot with regression line and confidence interval
+> plot (Data_Frame$Square_feet, Data_Frame$Market_Value, xlab = " Sq. Ft.", ylab = " Market Value", main = " Sq. Ft. vs. Market Value")
+> abline (lm_model, col = "red")
+> save.image("C:\\Users\\taiwo\\Desktop\\estate")
+> ggplot (Data_Frame, aes (x = Square_feet, y = Market_Value)) + 
